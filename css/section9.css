@@ -1,0 +1,38 @@
+.section9{
+    margin: 5% 5%;
+    & .section9_avatar{
+        width: 150px;
+        height: 150px;
+        /* background-color: rgb(255, 28, 119); */
+       
+        border: 3px solid #737373;
+        margin: 3px;
+        float: left;
+        border-radius: 50%;
+        shape-outside: circle(50%);
+
+    }
+
+    & p{
+        margin: 0;
+        padding: 0;
+        font-size: 25px;
+        color: #2f2f2f;
+    }
+    & p::first-letter{
+        font-size: 50px;
+        color: gold;
+    }
+} 
+
+.section9_img1{
+    background: url(../pic/pic34.jpg);
+}
+
+.section9_img2{
+    background: url(../pic/pic35.jpg);
+}
+
+.section9_img3{
+    background: url(../pic/pic36.jpg);
+}

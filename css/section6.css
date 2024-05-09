@@ -1,0 +1,100 @@
+.section6{
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    & h1{
+        margin: 0%;
+        padding: 0px;
+        font-family: 'HongLeiXingShuJianTi';
+        font-size: 80px;
+    }
+
+    & p{
+        margin: 0%;
+        padding: 0px;
+        font-family: 'HongLeiXingShuJianTi';
+        font-size: 35px;
+        color: #2f2f2f;
+    }
+}
+
+.section6_btn{
+    /* background: rgba(255, 255, 255, 0.992); */
+    display: flex;
+
+    & .section6_block{
+        margin-top: 20px;
+        width: 100px;
+        font-size: 20px;
+        font-family: 'YouSheYuFeiTeJianKangTi';
+        text-align: center;
+        line-height: 40px;
+        border: 1px solid black;
+        & a{
+            text-decoration: none;
+            border: none;/* remove the border */
+            outline: none;/* remove the outline */
+            background: none;/* remove the background */
+        }
+    }
+
+    & .block1{
+        background-color: rgba(13, 13, 13, 0.979);
+        margin-right: 20px;
+        & a{
+            color: rgb(220, 220, 220);
+        }
+    }
+
+    & .block2{
+        background-color: rgba(251, 251, 251, 0.979);
+        margin-left: 20px;
+        & a{
+            color: rgb(5, 5, 5);
+        }
+    }
+
+    & .block2:hover{
+        cursor: pointer;
+        background-color: rgb(17, 17, 17);
+        border: 1px solid rgb(17, 17, 17);
+        & a{
+            color: rgb(238, 238, 238);
+        }
+    }
+
+    & .block1:hover{
+        cursor: pointer;
+        background-color: rgb(249, 251, 252);
+        border: 1px solid rgb(249, 251, 252);
+        & a{
+            color: rgb(13, 13, 13);
+        }
+    }
+
+}
+
+.section6_img {
+    margin: 22px;
+    margin-left: 100px;
+    margin-right: 100px;    
+    width: 100%;
+    display: flex;              
+    justify-content: center;
+    align-items: center;    
+    overflow: hidden;
+    & img{
+        max-width: 90%;         
+        max-height: 80%;        
+        height: auto;           
+        width: auto;            
+        object-fit: contain;    
+    
+    }    
+    
+}
+

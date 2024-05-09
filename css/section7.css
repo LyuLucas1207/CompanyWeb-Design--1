@@ -1,0 +1,62 @@
+.section7 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 288px;
+    
+    
+}
+
+.section7_block {
+    flex: 1; /* 使文本和图片块占用相同的空间 */
+    display: flex;
+    width: 50%;
+
+    & img{
+        height: 800px;
+        width: 90%;
+        overflow: hidden;
+        object-fit: cover;
+        margin: 0% 10% 0% 10%; /* 上右下左 */
+    }
+
+    & .section7_outer{
+        display: flex;
+        flex-direction: column;
+        margin: 0% 10% 0% 10%; /* 上右下左 */
+
+        & .section7_text {
+            display: flex;
+            flex-direction: column;
+    
+            & h1{
+                margin-top: 120px;
+                font-size: 70px;
+            }
+            & p{
+                margin: 0%;
+                font-size: 30px;
+                color: #2f2f2f;
+            }
+        }
+    }
+}
+.section7_textInner{
+    display: flex;
+    flex-direction: row;
+    & .section7_textInner_block{
+        display: flex;
+        flex-direction: column;
+        /* margin-left: 10%; */
+    
+        & h2{
+            margin-top: 150px;
+            font-size: 50px;
+        }
+        & p{
+            margin: 0%;
+            font-size: 20px;
+            color: #2f2f2f;
+        }
+    }
+}

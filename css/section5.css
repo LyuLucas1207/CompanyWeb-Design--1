@@ -1,0 +1,126 @@
+@font-face {
+    font-family: 'YouSheYuFeiTeJianKangTi';
+    src: url('../font/YouSheYuFeiTeJianKangTi-2.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HongLeiXingShuJianTi';
+    src: url('../font/HongLeiXingShuJianTi-2.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SmileySans-Oblique';
+    src: url('../font/SmileySans-Oblique-2.ttf') format('truetype');
+    font-weight: normal;
+    font-style: oblique;
+}
+
+@font-face {
+    font-family: 'AlimamaFangYuanTiVF-Thin';
+    src: url('../font/AlimamaFangYuanTiVF-Thin-2.ttf') format('truetype');
+    font-weight: 100; /* Assuming Thin corresponds to font-weight 100 */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MaoKenWangXingYuan';
+    src: url('../font/MaoKenWangXingYuan-2.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+:root{
+    --width:100vw;
+    --height:40px;
+    --div-width:calc(var(--width)/15);
+    --radius:30px;
+}
+
+#section5{
+    margin: 0;
+    padding: 10px;
+    padding-left: 50px;
+    border: none; 
+    border-bottom: 2px solid black;
+    width: var(--width);
+}
+
+#section5_nav{
+    width: var(--width);
+    /* background: rgba(255, 255, 255, 0.978); */
+    display: flex;
+    
+    & .section5_logo{
+        width: var(--height);
+        margin-left: 50px;
+        background-image: url('../pic/icon/crane.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 80%;
+
+    }
+
+
+    & .section5_items{
+        width: var(--div-width);
+        font-size: 20px;
+        font-family: 'YouSheYuFeiTeJianKangTi';
+        text-align: center;
+        line-height: var(--height);
+
+        & a{
+            text-decoration: none;
+            border: none;/* remove the border */
+            outline: none;/* remove the outline */
+            background: none;/* remove the background */
+            color: rgba(0, 0, 0, 1);
+        }
+    }
+
+    & .section5_block1{
+        width: calc(var(--div-width) * 0.7);
+        margin-right: 100px;
+        margin-left: auto;
+        font-size: 20px;
+        font-family: 'YouSheYuFeiTeJianKangTi';
+        text-align: center;
+        line-height: var(--height);
+        border: 1px solid black;
+        background-color: rgba(13, 13, 13, 0.979);
+
+        & a{
+            text-decoration: none;
+            border: none;/* remove the border */
+            outline: none;/* remove the outline */
+            background: none;/* remove the background */
+            color: rgb(220, 220, 220);
+        }
+
+
+    }
+    
+    & .section5_items:hover{
+        cursor: pointer;
+        background-color: rgb(17, 17, 17);
+        border: 1px solid rgb(17, 17, 17);
+        border-radius: var(--radius);
+        & a{
+            color: rgb(238, 238, 238);
+        }
+    }
+
+    & .section5_block1:hover{
+        cursor: pointer;
+        background-color: rgb(249, 251, 252);
+        border: 1px solid rgb(249, 251, 252);
+        & a{
+            color: rgb(13, 13, 13);
+        }
+    }
+}
