@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 slide.className = 'section8_slide';
                 slide.innerHTML = `
                     <div class="section8_card">
-                        <a href="${slider.url_a}">
+                        <a href="${slider.url_a}#${slider.category}">
                             <img src="${slider.img}" alt="${slider.name}"/>
                         </a>
                         <div>
