@@ -1,0 +1,166 @@
+/* 容器样式 */
+.section12 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff; /* 背景颜色 */
+    margin: 5% 5% 5% 5%; /* 上右下左 */
+}
+
+.section12_card_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* max-width: 1200px; */
+    /* margin-top: 20px; */
+}
+
+.section12_category {
+    margin: 3vh;
+    width: 100%;
+}
+.section12_title h1 {
+    color: #000000; /* 标题颜色 */
+    font-size: calc(1vw + 2.5vh);
+}
+
+.section12_title p {
+    font-size: calc(1vw + 0.8vh);
+    color: #232323; /* 副标题颜色 */
+    margin-top: 1vh;
+}
+
+
+/* 卡片样式 */
+.section12_cards {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    & .section12_card {
+        flex: 1 1 25vh;/* 25vh is the initial width, 15vh is the minimum width */
+        min-height: 10vh;
+        border-radius: 1vh;
+        background-color: #fff;
+        margin: 1.5625vh; /* 1.5625vh is 1/64 of 100vh */
+        box-shadow: 0 1vh 1vh rgba(0,0,0,0.1);
+        transition: transform 0.3s ease;
+    }
+}
+
+
+
+
+.section12_card:hover {
+    transform: scale(1.2) translateY(-1vh); /* 悬浮效果 */
+}
+
+.section12_card a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* padding: 15px; */
+    margin: 2vh;
+
+    & img {
+        width: 100%; /* 图片宽度占满卡片宽度 */
+        height: 20vh; /* 固定图片高度为180px */
+        object-fit: cover;
+        /* cover 意思是保持图片比例不变，填充整个div，可能会有部分图片被裁剪 */
+        /* fill 意思是保持图片比例不变，填充整个div，不会有图片被裁剪，但是可能会有部分div不被图片填满 */
+        /* contain 意思是保持图片比例不变，不会有图片被裁剪，但是可能会有部分div不被图片填满 */
+        /* none 意思是不保持图片比例，填充整个div */
+        border-radius: 1vh 1vh 0 0; /* 图片上边框圆角 */
+        border-bottom: 1px solid #eee; /* 细微的分隔线 */
+        margin-top: 2vh;
+    }
+
+    & .section12_card_text {
+
+        margin: 0%;
+    
+        & h3 {
+            margin-top: 1vh;
+            font-size: calc(0.5vw + 1.5vh);
+            color: #111010;
+        }
+        &  p {
+            font-size: calc(0.3vw + 1vh);
+            color: #666;
+            margin: 0%;
+            /* line-height: 1.5;行高 */
+            /* text-align: center; */
+    
+            & :first-child {
+                margin-top: 0.3vh;
+            }
+    
+            &:last-child {
+                color: #000000;
+                margin-bottom: 1vh;
+            }
+        }
+    
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+.section12_modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+}
+
+.section12_modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 2vh;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 900px;
+    transform: translate(0%, -20%);
+
+    & .section12_close {
+        color: #aaa;
+        float: right;
+        font-size: 3vh;
+        font-weight: bold;
+    }
+    
+    & .section12_close:hover,
+    & .section12_close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    } 
+
+    & img{
+        width: 100%;
+        height: auto;
+    
+    }
+}

@@ -1,64 +1,76 @@
-
-
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>信息展示与模态框</title>
-    <link rel="stylesheet" href="./css/styles.css">
+    <title>产品信息展示</title>
+    <link rel="stylesheet" href="./css/section12.css">  <!-- 确保CSS路径正确 -->
 </head>
 <body>
-<div class="section11">
-    <div class="section11_info-container">
-        <h1>常见问题</h1>
-        <p>浏览我们的常见问题，了解对布局、订单流程和如何处理个人的相关信息。</p>
 
-        <div class="section11_info">
-            <p id="trigger1"><strong>持有产品有哪些？</strong> 产品列表信息展示。</p>
-            <p id="trigger2"><strong>如何下订单？</strong> 提供订单流程信息。</p>
-            <p id="trigger3"><strong>有报文机器吗？</strong> 报文机器可用状态。</p>
-            <p id="trigger4"><strong>如何申请退件？</strong> 退件流程说明。</p>
-        </div>
-
+<div class="section12">
+    <div class="section12_card_container">
+        <!-- 动态内容将被JavaScript脚本填充 -->
     </div>
 
     <!-- Modal 1 -->
-    <div id="modal1" class="section11_modal">
-        <div class="section11_modal-content">
-            <span class="section11_close">&times;</span>
+    <div id="modal1" class="section12_modal">
+        <div class="section12_modal-content">
+            <span class="section12_close">&times;</span>
             <h2>持有产品有哪些？</h2>
+            <img src="./pic/pic4.jpg" alt="pic4">
             <p>产品列表信息展示。</p>
         </div>
     </div>
 
-    <!-- Modal 2 -->
-    <div id="modal2" class="section11_modal">
-        <div class="section11_modal-content">
-            <span class="section11_close">&times;</span>
-            <h2>如何下订单？</h2>
-            <p>提供订单流程信息。</p>
-        </div>
-    </div>
-
-    <!-- Modal 3 -->
-    <div id="modal3" class="section11_modal">
-        <div class="section11_modal-content">
-            <span class="section11_close">&times;</span>
-            <h2>有报文机器吗？</h2>
-            <p>报文机器可用状态。</p>
-        </div>
-    </div>
-
-    <!-- Modal 4 -->
-    <div id="modal4" class="section11_modal">
-        <div class="section11_modal-content">
-            <span class="section11_close">&times;</span>
-            <h2>如何申请退件？</h2>
-            <p>退件流程说明。</p>
-        </div>
-    </div>
 </div>
-    
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/section12.js"></script>  <!-- 确保JavaScript路径正确 -->
 </body>
-<script src="./js/test.js"></script>
 </html>
+
+<!--
+    <div class="section12">
+
+
+        <div class="section12_card_container">
+
+
+            <div class="section12_category">
+
+
+                <div class="section12_title">
+                    <h2>信息展示与模态框</h2>
+                    <p>各种产品任意选择</p>
+                </div>
+
+
+                <div class="section12_cards">
+                    <div class="section12_card">
+                            <a href="#">
+                                <img src="./pic/data/data_pic (10).jpg" alt="1">
+                                
+                                <div class="section12_info">
+                                    <h3>product1</h3>
+                                    <p>product1 description</p>
+                                    <p>price:800</p>
+                                </div>
+                            
+                            </a>
+                    </div>
+                    <div class=>......</div>
+                </div>
+
+
+            </div>
+
+            <div class="section12_category">......</div>
+
+
+
+        </div>
+
+
+
+    </div>
+
+-->
