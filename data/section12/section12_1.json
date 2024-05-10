@@ -1,5 +1,5 @@
 {
-    "category1":[
+    "产品1":[
         {"ID":1,"name":"product1","price":100,"img":"pic/data/data_pic (1).jpg","description":"product1 description",
         "detailed_info":"产品详细介绍:我们的产品是由最好的材料产品是由最好的材料制成的，质量保证；我们的产品是由最好的材料制成的，质量保证料制成的，质量保证；我们的产品是由保证；我们的产品是由最好的材料由最好的材料制成的，质量保证；"},
         {"ID":2,"name":"product2","price":200,"img":"pic/data/data_pic (2).jpg","description":"product2 description",

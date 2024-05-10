@@ -49,6 +49,7 @@
     border: none; 
     border-bottom: 2px solid black;
     width: var(--width);
+    min-height: 4vh;
 }
 
 .section5_nav{
@@ -75,6 +76,7 @@
         font-family: 'YouSheYuFeiTeJianKangTi';
         text-align: center;
         line-height: var(--height);
+
 
         & a{
             text-decoration: none;
@@ -136,3 +138,44 @@
         }
     }
 }
+
+
+.section5_nav .section5_items {
+    position: relative; /* Needed to position the dropdown relative to the menu item */
+    & .section5_dropdown {
+        display: block; /* Needed to allow transformations */
+        position: absolute; /* Position it right below the menu item */
+        background-color: rgb(0, 0, 0); /* Background color for the dropdown */
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Optional: Adds a shadow to the dropdown */
+        width: 100%; /* Set the width of the dropdown menu */
+        overflow: hidden; /* Hide overflow content */
+        max-height: 0; /* Initial state with no content shown */
+        transition: max-height 0.01s ease-in-out; /* Smooth transition for max-height */
+        z-index: 1; /* Ensures the dropdown is on top of other content */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        & a {
+            color: rgb(255, 255, 255); /* Color of dropdown links */
+            padding: 1vh 1vh; /* Padding for dropdown items */
+            text-decoration: none; /* No underline on links */
+            display: block; /* Makes each link take full width of the dropdown */
+            /* white-space: nowrap; Prevent text wrapping */
+    
+            &:hover {
+                background-color: #f1f1f1; /* Background color for hovering on dropdown items */
+                color: rgb(0, 0, 0);
+            }
+        }
+    }
+}
+
+
+.section5_nav .section5_items:hover .section5_dropdown {
+    max-height: 100vh;
+    /* Adjust max-height according to the content size or use 'max-height: none' for automatic height adjustment */
+}
+
+
+

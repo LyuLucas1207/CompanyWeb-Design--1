@@ -75,7 +75,7 @@
             }
 
             #Temporary1 {
-                margin: 5% 5% 0 5%; /* 上右下左 */
+                margin: 2% 5% 3% 5%; /* 上右下左 */
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
@@ -95,13 +95,15 @@
                     align-items: center; */
 
                     & h1 {
-                    font-size: 5vh;
+                    font-size: calc(5vw + 2.5vh);
                     font-weight: bold;
+                    font-family: 'HongLeiXingShuJianTi';
                     }
 
                     & p {
-                        font-size: 1.9vh;
-                        line-height: 2;
+                        font-size: calc(0.7vw + 1.3vh);
+                        margin: 0.5vh 0 0.5vh 0;
+                        /* line-height: 2; */
                     }
                 }
 
@@ -129,7 +131,12 @@
             <div class="section5_logo"></div>
             <div class="section5_items"><a href="index.html">·主页·</a></div>
             <div class="section5_items"><a href="aboutus.html">·关于我们·</a></div>
-            <div class="section5_items"><a href="product.html">·产品·</a></div>
+            <div class="section5_items">
+                <a href="product.html">·产品·</a>
+                <div class="section5_dropdown">
+                    <!-- Add more links as needed -->
+                </div>
+            </div>
             <div class="section5_items"><a href="contact.html">·联系方式·</a></div>
             <div class="section5_items"><a href="#">·更多·</a></div>
             <div class="section5_block1"><a href="blog.html">博客</a></div>
@@ -182,6 +189,51 @@
 
     <div class="section12">
         <div class="section12_card_container">
+            <div class="section12_category">
+                <div class="section12_title">
+                    <h1 id="产品1">产品1</h1>
+                    <p id="p_产品1">各种产品任意选择</p>
+                </div>
+                <div id="section12_cards_产品1"  class="section12_cards">
+                    <!-- 动态内容将被JavaScript脚本填充 -->
+                </div>
+            </div>
+            <div class="section12_category">
+                <div class="section12_title">
+                    <h1 id="产品2">产品2</h1>
+                    <p id="p_产品2">各种产品任意选择</p>
+                </div>
+                <div id="section12_cards_产品2"  class="section12_cards">
+                    <!-- 动态内容将被JavaScript脚本填充 -->
+                </div>
+            </div>
+            <div class="section12_category">
+                <div class="section12_title">
+                    <h1 id="产品3">产品3</h1>
+                    <p id="p_产品3">各种产品任意选择</p>
+                </div>
+                <div id="section12_cards_产品3"  class="section12_cards">
+                    <!-- 动态内容将被JavaScript脚本填充 -->
+                </div>
+            </div>
+            <div class="section12_category">
+                <div class="section12_title">
+                    <h1 id="产品4">产品4</h1>
+                    <p id="p_产品4">各种产品任意选择</p>
+                </div>
+                <div id="section12_cards_产品4"  class="section12_cards">
+                    <!-- 动态内容将被JavaScript脚本填充 -->
+                </div>
+            </div>
+            <div class="section12_category">
+                <div class="section12_title">
+                    <h1 id="产品5">产品5</h1>
+                    <p id="p_产品5">各种产品任意选择</p>
+                </div>
+                <div id="section12_cards_产品5"  class="section12_cards">
+                    <!-- 动态内容将被JavaScript脚本填充 -->
+                </div>
+            </div>
     
             <!-- 动态内容将被JavaScript脚本填充 --->
         </div>
@@ -221,7 +273,7 @@
 
 
 <script src="js/jquery-3.7.1.min.js"></script>
-<script src="js/section11.js"></script>
+<script src="js/section5.js"></script>
 <script src="js/section12.js"></script>
 
 </html>

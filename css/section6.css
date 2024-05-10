@@ -80,19 +80,17 @@
 
 .section6_img {
     margin: 2.2vh;
-    margin-left: 10vh;
-    margin-right: 10vh;    
     width: 100%;
-    display: flex;              
+    display: flex;
     justify-content: center;
-    align-items: center;    
-    overflow: hidden;
     & img{
-        max-width: 90%;         
-        max-height: 80%;        
-        height: auto;           
-        width: auto;            
-        object-fit: contain;    
+        /* margin-left: 5%;
+        margin-right: 5%;    */
+        
+        /* max-width: 90%;         
+        max-height: 80%;                   */
+        width: 90vw;
+        object-fit: contain ;   
     
     }    
     

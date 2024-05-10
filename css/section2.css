@@ -1,44 +1,3 @@
-@font-face {
-    font-family: 'LinHaiLiShu';
-    src: url('../font/临海隶书.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'XiangCuiZiZaiShuChangHei';
-    src: url('../font/香萃自在舒畅黑.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Jersey15';
-    src: url('../font/Jersey15-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'FeiBoZhengDianTi';
-    src: url('../font/飞波正点体.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'aosagi';
-    src: url('../font/aosagi.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'chongxi_seal';
-    src: url('../font/chongxi_seal.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-}
 
 .section2{
     display: flex;
@@ -54,11 +13,11 @@
     position: relative;
     width: 60vw;/*vm means relative to the viewport width */
     height: 40vw;
-    max-width: 380px;
-    max-height: 250px;
+    max-width: 38vh;
+    max-height: 25vh;
     margin: 0;
     color: #ffffff;
-    perspective: 1200px;
+    perspective: 120vh;
     transform-origin: center;
 }
 
@@ -83,9 +42,11 @@
     position: absolute;
     width: 60vw;
     height: 40vw;
-    max-width: 380px;
-    max-height: 250px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    /* max-width: 38vh; */
+    max-width: 19vw;
+    /* max-height: 25vh; */
+    max-height: 13vw;
+    box-shadow: 0 5px 2vh rgba(0,0,0,0.3);
     border-radius: 6px;
     background-size: cover;
     -webkit-box-reflect: below 25px -webkit-linear-gradient(transparent 50%, rgba(255,255,255,0.3));
@@ -99,6 +60,7 @@
     }
     transform-origin: center center;
 }
+
 
 .section2_items:nth-child(1) { --rotate: 0deg; --bg-image: url(../pic/pic5.jpg);}
 .section2_items:nth-child(2) { --rotate: 72deg; --bg-image: url(../pic/pic8.jpg);}
@@ -121,7 +83,7 @@
 .section2_items:nth-child(5):hover {
     transform: scale3d(1.1, 1.1, 1.1)
     rotateY(var(--rotate)) translateZ(30vw);
-    box-shadow: 30px 30px 20px rgba(0,0,0,0.5);
+    box-shadow: 3vh 3vh 2vh rgba(0,0,0,0.5);
 }
 
 
