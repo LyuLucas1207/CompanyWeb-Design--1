@@ -67,7 +67,7 @@
         align-items: center;
         margin-top: 5vh;
 
-        & #section10_nav{
+        & .section10_nav{
             width: 100%;
             display: flex;
             justify-content: center;
@@ -130,7 +130,14 @@
     }
 }
 
+@media screen and (max-width: 5200px){
+    .section10_nav .section10_items > a{
+        /*vertical text*/
+        font-size: 2vh;
+        writing-mode: vertical-rl;
 
+    }
+}
 
 
 
