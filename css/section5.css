@@ -165,14 +165,16 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        border-radius: var(--radius);
+        /* border-radius: var(--radius); */
+        border-radius: 1vh;
         & a {
+            width: 100%;
             color: rgb(255, 255, 255); /* Color of dropdown links */
             padding: 1vh 1vh; /* Padding for dropdown items */
             text-decoration: none; /* No underline on links */
             display: block; /* Makes each link take full width of the dropdown */
             /* white-space: nowrap; Prevent text wrapping */
-            border-radius: var(--radius);
+            border-radius: 1vh;
     
             &:hover {
                 
@@ -196,5 +198,8 @@
         writing-mode: vertical-rl;
 
     }
-    
+    .section5_nav .section5_items:hover .section5_dropdown > a{
+        font-size: 2vh;
+        width: 70%;
+    }
 }

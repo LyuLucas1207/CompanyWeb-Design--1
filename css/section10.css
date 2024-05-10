@@ -85,12 +85,17 @@
                 margin-top: auto;
                 margin-bottom: auto;
                 margin-left: 3vw;
-                width: 5vh;
-                height: 5vh;
-                background: url('../pic/icon/crane.png');
+                width: 8vh;
+                height: 8vh;
+                background: url('../pic/icon/crane_gold64.png');
                 background-repeat: no-repeat;
                 background-position: center;
-                background-size: 80%;
+                background-size: 100%;
+
+                & img{
+                    width: 100%;
+                    height: 100%;
+                }
             }
 
             & .section10_items{
