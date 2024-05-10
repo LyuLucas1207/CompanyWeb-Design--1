@@ -42,7 +42,7 @@
     --radius:30px;
 }
 
-#section5{
+.section5{
     margin: 0;
     padding: 10px;
     padding-left: 50px;
@@ -51,7 +51,7 @@
     width: var(--width);
 }
 
-#section5_nav{
+.section5_nav{
     width: var(--width);
     /* background: rgba(255, 255, 255, 0.978); */
     display: flex;

@@ -11,10 +11,11 @@
     margin-left: 95px;
     margin-right: 95px;
     overflow-x: hidden;
+    margin-bottom: 200px;
 
     & #section8_title{
         margin-left: 0.5%;
-        margin-bottom: 150px;
+        margin-bottom: 50px;
 
         & h1{
             font-size: 50px;
@@ -28,13 +29,25 @@
             font-size: 20px;
             color: #2f2f2f;
         }
+
+        & a{
+            
+            color: #3b3737;
+            font-size: 20px;
+            margin-left: 10px;
+            text-shadow: 5px 5px -50px rgba(255, 255, 255, 0.5);
+        }
+
+        & a:hover{
+            color: #000000;
+        }
     }
 }
 
 .section8_content_slider{
     width: 100vw;
     position: relative;
-    height: 28em;
+    height:  32em;
     margin: 2em 0;
 }
 

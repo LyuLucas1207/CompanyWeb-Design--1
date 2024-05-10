@@ -8,13 +8,10 @@
         <link rel="icon" href="./pic/icon/crane_gold100.png" type="image/png">
 
         <!-- 在这里添加CSS文件或者内联样式 -->
+        <link rel="stylesheet" href="css/section2.css">
         <link rel="stylesheet" href="css/section5.css">
-        <link rel="stylesheet" href="css/section6.css">
         <link rel="stylesheet" href="css/section7.css">
-        <link rel="stylesheet" href="css/section8.css">
-        <link rel="stylesheet" href="css/section9.css">
         <link rel="stylesheet" href="css/section10.css">
-        <link rel="stylesheet" href="css/section11.css">
 
         <style>
             @font-face {
@@ -71,13 +68,58 @@
                 overflow-x: hidden; /* 隐藏水平滚动 */
             }
 
+            #Temporary1 {
+                margin: 5% 5% 0 5%; /* 上右下左 */
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+
+                & div{
+                    width: 50%;
+                    height: auto;
+                }
+
+                & .T1_text {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+
+                    /* justify-content: center;
+                    align-items: center; */
+
+                    & h1 {
+                    font-size: 50px;
+                    font-weight: bold;
+                    }
+
+                    & p {
+                        font-size: 20px;
+                        line-height: 2;
+                    }
+                }
+
+                
+
+                & .T1_color {
+                    transform: translate(55%, 0);
+                    border-radius: 50% ; 
+                    
+                    background: rgb(0, 0, 0);
+                    width: 100%;
+                    height: 320px;
+
+                }
+            }
+
+
         </style>
 </head>
 
 <body id="index" >
 
-    <div id="section5">
-        <nav id="section5_nav">
+    <div class="section5">
+        <nav class="section5_nav">
             <div class="section5_logo"></div>
             <div class="section5_items"><a href="index.html">·主页·</a></div>
             <div class="section5_items"><a href="aboutus.html">·关于我们·</a></div>
@@ -86,6 +128,49 @@
             <div class="section5_items"><a href="#">·更多·</a></div>
             <div class="section5_block1"><a href="blog.html">博客</a></div>
         </nav>
+    </div>
+
+    <div id="Temporary1">
+        <div class="T1_text">
+            <h1>金杉鹤衬布</h1>
+            <p>·金杉和衬布是一家专业生产和销售各种衬布的公司，我们的产品主要用于衬衫、西装、外套等服装的内衬。</p>
+            <p>·我们的产品有多种规格和颜色，可以满足不同客户的需求。</p>
+            <p>·我们的产品质量好，价格合理，欢迎广大客户前来咨询和购买。</p>
+        </div>
+
+        <div class="T1_color">
+        </div>
+    </div>
+
+    <div class="section7" style="margin: 0 0 100px 0;">
+        <div class="section7_block" >
+            <div class="section7_outer" > 
+                <div class="section7_text">
+                    <h1>金杉鹤有限公司的衬布具有独特的卖点</h1>
+                    <p>成就卓越, 品质至上, 几代传承, 先进工艺</p>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="section7_block" style="align-items: center; justify-content: center;">
+
+
+            <div class="section2" style="width: 80%;">
+                <div class="section2_shell">
+                    <div class="section2_content">
+                        <div class="section2_items"><a href="index.html"></a></div>
+                        <div class="section2_items"><a href="index.html"></a></div>
+                        <div class="section2_items"><a href="index.html"></a></div>
+                        <div class="section2_items"><a href="index.html"></a></div>
+                        <div class="section2_items"><a href="index.html"></a></div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
     </div>
 
 

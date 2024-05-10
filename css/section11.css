@@ -3,6 +3,7 @@
     margin-left: 4%;
     margin-right: 6%;
     background-color: #f4f4f4;
+    
 }
 
 .section11_info-container {
@@ -60,6 +61,16 @@
     height: 100%;
     overflow: auto;
     background-color: rgba(0,0,0,0.4);
+
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    
+
+
 }
 
 .section11_modal-content {
@@ -69,6 +80,7 @@
     border: 1px solid #888;
     width: 80%;
     max-width: 900px;
+    transform: translate(0%, -20%);
 
     & .section11_close {
         color: #aaa;
