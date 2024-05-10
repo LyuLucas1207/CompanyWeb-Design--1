@@ -37,15 +37,15 @@
 
 :root{
     --width:100vw;
-    --height:40px;
+    --height:4vh;
     --div-width:calc(var(--width)/15);
-    --radius:30px;
+    --radius:3vw;
 }
 
 .section5{
     margin: 0;
-    padding: 10px;
-    padding-left: 50px;
+    padding: 0.5vw;
+    padding-left: 7vw;
     border: none; 
     border-bottom: 2px solid black;
     width: var(--width);
@@ -55,10 +55,12 @@
     width: var(--width);
     /* background: rgba(255, 255, 255, 0.978); */
     display: flex;
-    
     & .section5_logo{
+        margin-top: auto;
+        margin-bottom: auto;
         width: var(--height);
-        margin-left: 50px;
+        height: var(--height);
+        margin-left: 3vw;
         background-image: url('../pic/icon/crane.png');
         background-repeat: no-repeat;
         background-position: center;
@@ -69,7 +71,7 @@
 
     & .section5_items{
         width: var(--div-width);
-        font-size: 20px;
+        font-size: 2vh;
         font-family: 'YouSheYuFeiTeJianKangTi';
         text-align: center;
         line-height: var(--height);
@@ -81,16 +83,26 @@
             background: none;/* remove the background */
             color: rgba(0, 0, 0, 1);
         }
+        &:hover {
+            color: #000;
+            text-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+            transition: 0.3s;
+            font-size: 2.4vh;
+        }
     }
 
     & .section5_block1{
+        margin-top: auto;
+        margin-bottom: auto;
         width: calc(var(--div-width) * 0.7);
-        margin-right: 100px;
+        margin-right: 10vw;
         margin-left: auto;
-        font-size: 20px;
+        font-size: 2vh;
         font-family: 'YouSheYuFeiTeJianKangTi';
         text-align: center;
+        justify-content: center;
         line-height: var(--height);
+        border-radius: var(--radius);
         border: 1px solid black;
         background-color: rgba(13, 13, 13, 0.979);
 

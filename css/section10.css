@@ -10,26 +10,27 @@
         filter: brightness(120%);
 
         & h1{
-            font-size: 50px;
+            font-size: 5vh;
             margin: 0;
-            margin-top: 50px;
+            margin-top: 5vh;
         }
         & p{
-            font-size: 20px;
+            font-size: 2vh;
             color: #2f2f2f;
             margin: 0;
-            margin-top: 30px;
+            margin-top: 3vw;
         }
 
         & .section10_block{
-            margin-top: 50px;
-            margin-bottom: 50px;
-            width: 100px;
-            font-size: 20px;
+            margin-top: 5vh;
+            margin-bottom: 5vh;
+            width: 20vh;
+            font-size: 2vh;
             font-family: 'YouSheYuFeiTeJianKangTi';
             text-align: center;
-            line-height: 40px;
+            line-height: 4vh;
             border: 1px solid black;
+            border-radius: 0.5vh;
             & a{
                 text-decoration: none;
                 border: none;/* remove the border */
@@ -41,7 +42,7 @@
 
         & .block1{
             background-color: rgba(13, 13, 13, 0.979);
-            margin-right: 20px;
+            margin-right: 2vh;
             & a{
                 color: rgb(220, 220, 220);
             }
@@ -64,25 +65,28 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 50px;
+        margin-top: 5vh;
 
         & #section10_nav{
             width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-top: 50px;
-            margin-bottom: 150px;
-            font-size: 20px;
+            margin-top: 5vh;
+            margin-bottom: 15vh;
+            font-size: 2vh;
             text-align: center;
-            line-height: 40px;
+            line-height: 4vh;
             border: none;/* remove the border */
             border-bottom: 2px solid black;
-            padding-bottom: 50px;
+            padding-bottom: 5vh;
 
             & .section10_logo{
-                width: 50px;
-                height: 50px;
+                margin-top: auto;
+                margin-bottom: auto;
+                margin-left: 3vw;
+                width: 5vh;
+                height: 5vh;
                 background: url('../pic/icon/crane.png');
                 background-repeat: no-repeat;
                 background-position: center;
@@ -90,7 +94,17 @@
             }
 
             & .section10_items{
-                margin-right: 50px;
+                margin-right: 5vh;
+                text-align: center;
+                line-height: 5vh;
+                width: 7vw;
+
+
+                &:hover {
+                    text-shadow: 2vh 2vh 2vh rgba(181, 181, 86, 0.5);
+                    transition: 0.3s;
+                    font-size: 2.5vh;
+                }
             }
 
             & a{
@@ -99,11 +113,14 @@
                 outline: none;/* remove the outline */
                 background: none;/* remove the background */
                 color: rgba(0, 0, 0, 1);
+
+                &:hover {
+                    color: rgb(238, 204, 9);
+                }
             }
 
-            & a:hover{
-                color: rgb(238, 204, 9);
-            }
+
+
         }
 
     }

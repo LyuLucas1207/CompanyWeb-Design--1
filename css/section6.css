@@ -1,5 +1,5 @@
 .section6{
-    margin-top: 100px;
+    margin-top: 10vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -10,14 +10,14 @@
         margin: 0%;
         padding: 0px;
         font-family: 'HongLeiXingShuJianTi';
-        font-size: 80px;
+        font-size: calc(3vw + 2vh);
     }
 
     & p{
         margin: 0%;
         padding: 0px;
         font-family: 'HongLeiXingShuJianTi';
-        font-size: 35px;
+        font-size: calc(1.5vw + 1vh);
         color: #2f2f2f;
     }
 }
@@ -27,12 +27,12 @@
     display: flex;
 
     & .section6_block{
-        margin-top: 20px;
-        width: 100px;
-        font-size: 20px;
+        margin-top: 2vh;
+        width: calc(1vw + 9vh);
+        font-size: calc(0.3vw + 1.3vh);
         font-family: 'YouSheYuFeiTeJianKangTi';
         text-align: center;
-        line-height: 40px;
+        line-height: 4vh;
         border: 1px solid black;
         & a{
             text-decoration: none;
@@ -44,7 +44,7 @@
 
     & .block1{
         background-color: rgba(13, 13, 13, 0.979);
-        margin-right: 20px;
+        margin-right: 2vh;
         & a{
             color: rgb(220, 220, 220);
         }
@@ -52,7 +52,7 @@
 
     & .block2{
         background-color: rgba(251, 251, 251, 0.979);
-        margin-left: 20px;
+        margin-left: 2vh;
         & a{
             color: rgb(5, 5, 5);
         }
@@ -79,9 +79,9 @@
 }
 
 .section6_img {
-    margin: 22px;
-    margin-left: 100px;
-    margin-right: 100px;    
+    margin: 2.2vh;
+    margin-left: 10vh;
+    margin-right: 10vh;    
     width: 100%;
     display: flex;              
     justify-content: center;

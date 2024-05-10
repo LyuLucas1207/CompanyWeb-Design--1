@@ -100,10 +100,6 @@
     transform-origin: center center;
 }
 
-.section2_items:hover{
-    
-}
-
 .section2_items:nth-child(1) { --rotate: 0deg; --bg-image: url(../pic/pic5.jpg);}
 .section2_items:nth-child(2) { --rotate: 72deg; --bg-image: url(../pic/pic8.jpg);}
 .section2_items:nth-child(3) { --rotate: 144deg; --bg-image: url(../pic/pic12.jpg);}

@@ -36,6 +36,9 @@
 
     &:hover {
         color: #000;
+        text-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+        transition: 0.3s;
+        font-size: 20px;
     }
 
     & a{
@@ -46,10 +49,8 @@
         color: #464343;
     }
 
-    & a:hover{
-        color: #000;
-    }
 }
+
 
 .section11_modal {
     display: none;
