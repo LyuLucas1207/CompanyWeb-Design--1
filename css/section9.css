@@ -1,12 +1,12 @@
 .section9{
     margin: 5% 5%;
     & .section9_avatar{
-        width: 150px;
-        height: 150px;
+        width: 15vh;
+        height: 15vh;
         /* background-color: rgb(255, 28, 119); */
        
-        border: 3px solid #737373;
-        margin: 3px;
+        border: 0.3vh solid #737373;
+        margin: 0.3vh;
         float: left;
         border-radius: 50%;
         shape-outside: circle(50%);
@@ -16,11 +16,12 @@
     & p{
         margin: 0;
         padding: 0;
-        font-size: 25px;
+        font-size: calc(0.5vw + 1.5vh);
         color: #2f2f2f;
+        text-align: justify;
     }
     & p::first-letter{
-        font-size: 50px;
+        font-size: 5vh;
         color: gold;
     }
 } 

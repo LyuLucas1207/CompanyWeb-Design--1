@@ -113,18 +113,15 @@
                 outline: none;/* remove the outline */
                 background: none;/* remove the background */
                 color: rgba(0, 0, 0, 1);
+                transition: color 0.3s;
+                overflow: hidden;
 
                 &:hover {
                     color: rgb(238, 204, 9);
+                    transition: 0.1s;
                 }
             }
-
-
-
         }
-
     }
-
-    
 }
 
