@@ -1,0 +1,124 @@
+{
+    "sliders":[
+        {
+            "name":"Slider1",
+            "url_a":"contact.html",
+            "img":"./pic/pic7.jpg",
+            "description":"This is a description of the slider 1"
+        },
+        {
+            "name":"Slider2",
+            "url_a":"contact.html",
+            "img":"./pic/pic8.jpg",
+            "description":"This is a description of the slider 2"
+        },
+        {
+            "name":"Slider3",
+            "url_a":"contact.html",
+            "img":"./pic/pic9.jpg",
+            "description":"This is a description of the slider 3"
+        },
+        {
+            "name":"Slider4",
+            "url_a":"contact.html",
+            "img":"./pic/pic10.jpg",
+            "description":"This is a description of the slider 4"
+        },
+        {
+            "name":"Slider5",
+            "url_a":"contact.html",
+            "img":"./pic/pic11.jpg",
+            "description":"This is a description of the slider 5"
+        },
+        {
+            "name":"Slider6",
+            "url_a":"contact.html",
+            "img":"./pic/pic12.jpg",
+            "description":"This is a description of the slider 6"
+        },
+        {
+            "name":"Slider7",
+            "url_a":"contact.html",
+            "img":"./pic/pic17.jpg",
+            "description":"This is a description of the slider 7"
+        },
+        {
+            "name":"Slider8",
+            "url_a":"contact.html",
+            "img":"./pic/pic14.jpg",
+            "description":"This is a description of the slider 8"
+        },
+        {
+            "name":"Slider9",
+            "url_a":"contact.html",
+            "img":"./pic/pic15.jpg",
+            "description":"This is a description of the slider 9"
+        },
+        {
+            "name":"Slider10",
+            "url_a":"contact.html",
+            "img":"./pic/pic16.jpg",
+            "description":"This is a description of the slider 10"
+        },
+        {
+            "name":"Slider11",
+            "url_a":"contact.html",
+            "img":"./pic/pic17.jpg",
+            "description":"This is a description of the slider 11"
+        },
+        {
+            "name":"Slider12",
+            "url_a":"contact.html",
+            "img":"./pic/pic18.jpg",
+            "description":"This is a description of the slider 12"
+        },
+        {
+            "name":"Slider13",
+            "url_a":"contact.html",
+            "img":"./pic/pic19.jpg",
+            "description":"This is a description of the slider 13"
+        },
+        {
+            "name":"Slider14",
+            "url_a":"contact.html",
+            "img":"./pic/pic20.jpg",
+            "description":"This is a description of the slider 14"
+        },
+        {
+            "name":"Slider15",
+            "url_a":"contact.html",
+            "img":"./pic/pic21.jpg",
+            "description":"This is a description of the slider 15"
+        },
+        {
+            "name":"Slider16",
+            "url_a":"contact.html",
+            "img":"./pic/pic22.jpg",
+            "description":"This is a description of the slider 16"
+        },
+        {
+            "name":"Slider17",
+            "url_a":"contact.html",
+            "img":"./pic/pic23.jpg",
+            "description":"This is a description of the slider 17"
+        },
+        {
+            "name":"Slider18",
+            "url_a":"contact.html",
+            "img":"./pic/pic24.jpg",
+            "description":"This is a description of the slider 18"
+        },
+        {
+            "name":"Slider19",
+            "url_a":"contact.html",
+            "img":"./pic/pic25.jpg",
+            "description":"This is a description of the slider 19"
+        },
+        {
+            "name":"Slider20",
+            "url_a":"contact.html",
+            "img":"./pic/pic26.jpg",
+            "description":"This is a description of the slider 20"
+        }
+    ]
+}

@@ -9,8 +9,8 @@
     font-family: 'YouSheYuFeiTeJianKangTi';
     margin-top: calc(5vw + 10vh);
     margin-bottom: calc(5vw + 10vh);
-    margin-left: 9vh;
-    margin-right: 9vh;
+    margin-left: 5%;
+    margin-right: 5%;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
@@ -66,7 +66,7 @@
     top: 0;
     left: 0;
     display: grid;
-    grid-template-columns: repeat(9, 1fr);
+    grid-template-columns: repeat(20, 1fr);
     align-items: center;
     width: calc(215vh + 55vw);
     height: 100%;
@@ -79,29 +79,18 @@
     align-items: center;
     text-align: center;
     padding: 1vh;
-    
-
+    min-width: 40vh;
 
 }
 
-.section8_slide:nth-child(1):hover,
-.section8_slide:nth-child(2):hover,
-.section8_slide:nth-child(3):hover,
-.section8_slide:nth-child(4):hover,
-.section8_slide:nth-child(5):hover,
-.section8_slide:nth-child(6):hover,
-.section8_slide:nth-child(7):hover,
-.section8_slide:nth-child(8):hover,
-.section8_slide:nth-child(9):hover{
+.section8_slide:hover{
     transform: scale(1.1);
     transition: 0.3s;
-
     & .section8_card{
         box-shadow: 5px 5px 2vh rgba(0, 0, 0, 0.5);
         transform: translateY(-5px);
     }
 }
-
 
 .section8_slide, .section8_card{
     background: #ffffff;
@@ -111,17 +100,16 @@
 .section8_card{
     border-radius: 2vh;
     box-shadow: 5px 5px 2vh rgba(0, 0, 0, 0.2);
+    & div{
+        padding: 1.7vh 3vh;
+    }
 }
 
-
-
-.section8_card div{
-    padding: 1.7vh 3vh;
-}
 
 .section8_slide img{
     height: 30vh;
     width: 100%;
+    min-width: 40vh;
     object-fit: cover;
 }
 
@@ -173,23 +161,3 @@
     background: #ffffff;
     color: #000000;
 }
-
-
-
-/* @media screen and (max-width: 1100px) {
-    .section8_slider_container{
-        width: 266.5%;
-    }
-}
-
-@media screen and (max-width: 900px) {
-    .section8_slider_container{
-        width: 400%;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .section8_slider_container{
-        width: 800%;
-    }
-} */
