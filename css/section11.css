@@ -15,10 +15,12 @@
 }
 
 .section11_info-container h1 {
-    font-size: calc(1vw + 1.5vh);
+    font-size: 2.2vh;/*for chinese browser*/
+    font-size: calc(1vw + 2vh);
 }
 
 .section11_info-container p {
+    font-size: 1.6vh;/*for chinese browser*/
     font-size: calc(0.5vw + 1.5vh);
     color: #464343;
     margin: 1vh 0;
@@ -78,6 +80,7 @@
     border: 1px solid #888;
     width: 80%;
     max-width: 90vh;
+    transform: translate(0%, 15vh);/*for chinese browser*/
     transform: translate(0%, calc(-50% + 40vh - 10vw));
 }
 
@@ -97,6 +100,14 @@
     font-size: 1.6vh;
     line-height: 1.6;
     margin: 1vh 0;
+}
+
+.section11_modal-content p a {
+    text-decoration: none;
+    border: none;
+    outline: none;
+    background: none;
+    color: #464343;
 }
 
 .section11_close:hover,

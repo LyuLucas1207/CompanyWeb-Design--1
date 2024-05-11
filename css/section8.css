@@ -7,14 +7,15 @@
 
 .section8{
     font-family: 'YouSheYuFeiTeJianKangTi';
+    margin-top: 12vh;/*for chinese browser*/
     margin-top: calc(5vw + 10vh);
+    margin-bottom: 12vh;/*for chinese browser*/
     margin-bottom: calc(5vw + 10vh);
     margin-left: 5%;
     margin-right: 5%;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-
     overflow: auto;
     scrollbar-width: none;
     -ms-overflow-style: none;
@@ -24,16 +25,14 @@
     display: none;
 }
 
-
-    
-
 .section8_title{
     margin-left: 0.5%;
     margin-bottom: 5vh;
 }
 
 .section8_title h1{
-    font-size: calc(1vw + 2vh);
+    font-size: 3vh;/*for chinese browser*/
+    font-size: calc(1vw + 2.5vh);
     text-shadow: 2px 2px -5px rgba(124, 117, 117, 0.5);
         /* 2px 2px 0px #e3e3e3,
         -2px -2px 0 rgba(0, 0, 0, 0.5); */
@@ -41,6 +40,7 @@
 }
 
 .section8_title p{
+    font-size: 1.5vh;/*for chinese browser*/
     font-size: calc(1vw + 1.1vh);
     color: #2f2f2f;
 }
@@ -49,6 +49,7 @@
 
 .section8_title a{
     color: #3b3737;
+    font-size: 1.3vh;/*for chinese browser*/
     font-size: calc(0.7vw + 0.9vh);
     margin-left: 1vh;
     text-shadow: 5px 5px -5vh rgba(255, 255, 255, 0.5);
@@ -75,6 +76,7 @@
     display: grid;
     grid-template-columns: repeat(20, 1fr);
     align-items: center;
+    width: 235vh;/*for chinese browser*/
     width: calc(215vh + 55vw);
     height: 100%;
 }

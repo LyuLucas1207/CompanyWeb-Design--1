@@ -18,6 +18,7 @@
 .section9 p{
     margin: 0;
     padding: 0;
+    font-size: 1.8vh;/*for chinese browser*/
     font-size: calc(0.5vw + 1.5vh);
     color: #2f2f2f;
     text-align: justify;

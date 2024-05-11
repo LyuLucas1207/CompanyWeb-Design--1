@@ -25,10 +25,12 @@
 .section12_title h1 {
     color: #000000;
     /* 标题颜色 */
+    font-size: 3vh;/*for chinese browser*/
     font-size: calc(1vw + 2.5vh);
 }
 
 .section12_title p {
+    font-size: 1.2vh;/*for chinese browser*/
     font-size: calc(1vw + 0.8vh);
     color: #232323;
     /* 副标题颜色 */
@@ -115,6 +117,7 @@
     width: 100%;
     /* 图片宽度占满卡片宽度 */
     height: 100%;
+    max-height: 19vh;/*for chinese browser*/
     max-height:calc(9vw + 15vh);
     object-fit: cover;
     /* cover 意思是保持图片比例不变，填充整个div，可能会有部分图片被裁剪 */
@@ -134,11 +137,13 @@
 
 .section12_card_text h3 {
     margin-top: 1vh;
+    font-size: 1.8vh;/*for chinese browser*/
     font-size: calc(0.5vw + 1.5vh);
     color: #111010;
 }
 
 .section12_card_text p {
+    font-size: 1.2vh;/*for chinese browser*/
     font-size: calc(0.3vw + 1vh);
     color: #666;
     margin: 0%;
@@ -181,6 +186,7 @@
     border: 1px solid #888;
     width: 80%;
     max-width: 70vh;
+    transform: translate(0%, 8vh);/*for chinese browser*/
     transform: translate(0%, calc(-50% + 40vh - 10vw));
     border-radius: 3vh;
     
