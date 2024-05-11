@@ -2,7 +2,10 @@
     /* margin: 5%; */
     margin-left: 8%;
     margin-right: 10%;
-    background-color: #f4f4f4;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -29,7 +32,8 @@
 
 .section11_info p {
     padding: 0 2vh;
-    font-size: 1.6vh;
+    font-size: 1.4vh;
+    font-size: calc(0.5vw + 1.3vh);
     line-height: 1.6;
     border-bottom: 1px solid #000000;
     padding-top: 2vh;
@@ -74,6 +78,7 @@
 }
 
 .section11_modal-content {
+    
     background-color: #fefefe;
     margin: 15% auto;
     padding: 4vh;
@@ -123,6 +128,7 @@
 }
 
 .section11_modal-content img {
+    
     width: 100%;
     height: auto;
 }

@@ -121,8 +121,8 @@
     border: 1px solid #888;
     width: 80%;
     max-width: 50vh;
-    transform: translate(0%, 8vh);/*for chinese browser*/
-    transform: translate(0%, calc(-58% + 45vh - 5vw));
+    transform: translate(0%, 5vh);/*for chinese browser*/
+    transform: translate(0%, calc(-58% + 50vh - 5vw));
     border-radius: 2vh;
     box-shadow: #fff 0 0 1vh 0.5vh;
     

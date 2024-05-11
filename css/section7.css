@@ -9,10 +9,13 @@
 .section7_block {
     flex: 1; /* 使文本和图片块占用相同的空间 */
     display: flex;
-    width: 50%;
+    width: 50vw;
+    
+    justify-content: center;
+    align-items: center;
 }
 
-.section7_block img{
+.section7_block>img{
     height: 64vh;/*for chinese browser*/
     height: calc(8vw + 60vh);
     width: 64vh;/*for chinese browser*/
@@ -20,7 +23,7 @@
     /* width: 90%; */
     overflow: hidden;
     object-fit: cover;
-    margin: 0% 10% 0% 10%; /* 上右下左 */
+    margin: 0% 10% 0% 10%;
 }
 
 .section7_outer{
@@ -45,6 +48,7 @@
     margin: 0%;
     font-size: 3vh;
     color: #2f2f2f;
+    padding: 0% 10% 0% 10%; /* 上右下左 */
 }
 
 
