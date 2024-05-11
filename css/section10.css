@@ -137,7 +137,7 @@
 
 
 
-@media screen and (max-width: 2100px){
+@media screen and (max-width: 1100px){
     .section10_nav .section10_items > a{
         /*vertical text*/
         font-size: 2vh;
