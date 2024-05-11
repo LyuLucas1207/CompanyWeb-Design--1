@@ -51,14 +51,15 @@
     background-size: cover;
     -webkit-box-reflect: below 25px -webkit-linear-gradient(transparent 50%, rgba(255,255,255,0.3));
     cursor: pointer;
-    & a{
-        display: block;
-        width: 100%;
-        height: 100%;
-        text-decoration: none;
-        color: #ffffff;
-    }
     transform-origin: center center;
+}
+
+.section2_items a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #ffffff;
 }
 
 
