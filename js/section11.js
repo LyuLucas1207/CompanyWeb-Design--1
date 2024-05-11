@@ -33,6 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
     .then(response => response.json())
     .then(data => {
         const container = document.querySelector('.section11_info');
+        const modal = document.querySelector('.section11_modal'); // 获取模态窗口的背景层
         const modalContent = document.querySelector('.section11_modal-content');
         data.Questions.forEach((question, index) => {
             // 创建问题触发器
@@ -45,17 +46,23 @@ document.addEventListener("DOMContentLoaded", function() {
                 modalContent.innerHTML = `
                     <span class="section11_close">&times;</span>
                     <h2>${question.question}</h2>
-                    <img src="${question.img}" alt="pic${index + 4}">
+                    <img src="${question.img}" alt="问题图片${index + 4}">
                     <p>${question.answer}</p>
                 `;
-                document.getElementById('modal1').style.display = "block";
-
-                // 绑定关闭按钮事件
-                modalContent.querySelector('.section11_close').onclick = function() {
-                    document.getElementById('modal1').style.display = "none";
+                modal.style.display = 'block'; // 显示模态的背景层
+                document.querySelector('.section11_close').onclick = () => {
+                    modal.style.display = 'none'; // 点击关闭按钮隐藏模态窗口
+                };
+                window.onclick = function(event) {
+                    if (event.target == modal) {
+                        modal.style.display = 'none'; // 点击背景层隐藏模态窗口
+                    }
                 };
             };
         });
+
+        
+
         const lastTrigger = document.createElement('p');
         lastTrigger.innerHTML = '<a href="contact.html"><strong>·还有其他问题？</strong> 请联系我们。</a>';
         container.appendChild(lastTrigger);
@@ -64,13 +71,5 @@ document.addEventListener("DOMContentLoaded", function() {
     .catch(error => {
         console.error('Failed to load section11 data:', error);
     });
-
-    // 点击模态窗口外部关闭模态窗口
-    window.onclick = function(event) {
-        const modal = document.getElementById('modal1');
-        if (event.target === modal) {
-            modal.style.display = "none";
-        }
-    };
 });
 

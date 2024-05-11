@@ -2,32 +2,29 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>产品信息展示</title>
-    <link rel="stylesheet" href="./css/section12.css">  <!-- 确保CSS路径正确 -->
-    <meta http-equiv="Cache-Control" content="max-age=86400, public"> <!-- 缓存控制 -->
-    <meta http-equiv="Pragma" content="max-age=86400, public"> <!-- 缓存控制 -->
-    <meta http-equiv="Expires" content="86400"> <!-- 缓存控制 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 确保移动端适配 -->
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>团队介绍</title>
+    <link rel="stylesheet" href="./css/section9.css">
 </head>
 <body>
-
-    <div class="section12">
-        <div class="section12_card_container">
-    
-            <!-- 动态内容将被JavaScript脚本填充 --->
+    <div class="section9">
+        <div class="section9_title">
+            <h1>我们的团队</h1>
+            <p>我们的团队是由最好的人才组成的，保证了最好的品质</p>
         </div>
-    
-        <!-- Modal example -->
-        <div id="modal1" class="section12_modal">
-            <div class="section12_modal-content">
-                <!-- 模态内容会在 JavaScript 中动态填充 -->
+        <div class="section9_profiles">
+            <!-- 成员信息将通过JavaScript动态填充到这里 -->
+        </div>
+        
+        <div id="modal1" class="section9_modal" style="display:none;">
+            <div class="section9_modal-content">
+                <!-- 模态内容将通过JavaScript动态填充到这里 -->
             </div>
         </div>
     </div>
 
-<script src="js/jquery-3.7.1.min.js"></script>
-<script src="js/section12.js"></script>  <!-- 确保JavaScript路径正确 -->
+    
 </body>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/section9.js"></script>
 </html>
-

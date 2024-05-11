@@ -9,8 +9,8 @@
     font-family: 'YouSheYuFeiTeJianKangTi';
     margin-top: 12vh;/*for chinese browser*/
     margin-top: calc(5vw + 10vh);
-    margin-bottom: 12vh;/*for chinese browser*/
-    margin-bottom: calc(5vw + 10vh);
+    margin-bottom: 10vh;/*for chinese browser*/
+    margin-bottom: calc(5vw + 8vh);
     margin-left: 5%;
     margin-right: 5%;
     overflow-x: hidden;
