@@ -11,9 +11,11 @@
     margin: 0.3vh;
     float: left;
     border-radius: 50%;
-    shape-outside: circle(50%);
-
 }
+
+
+
+
 
 .section9 p{
     margin: 0;
@@ -38,4 +40,19 @@
 
 .section9_img3{
     background: url(../pic/pic36.jpg);
+}
+
+/* 老浏览器的回退样式 */
+.section9 p {
+    margin-left: 16vh; /* 添加等于或大于 avatar 宽度的左边距 */
+}
+
+/* 新浏览器的样式 */
+@supports (shape-outside: circle(50%)) {
+    .section9_avatar {
+        shape-outside: circle(50%);
+    }
+    .section9 p {
+        margin: 0;
+    }
 }
