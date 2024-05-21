@@ -1,4 +1,4 @@
-.section13{
+.section15 {
     margin-left: 5%;
     margin-right: 5%;
     overflow: hidden;
@@ -6,64 +6,75 @@
     flex-direction: column;
 }
 
-.secrion13_location_card h2{
+.section15_location_card h2 {
     text-align: center;
-    font-size: 2.5vh;/*for chinese browser*/
+    font-size: 2.5vh;
+    /*for chinese browser*/
     font-size: calc(1vw + 2vh);
-    margin-top: 1vh;/*for chinese browser*/
+    margin-top: 1vh;
+    /*for chinese browser*/
     margin-top: calc(2vw + 0.5vh);
     margin-bottom: 0;
 }
-.secrion13_location_card h3{
+
+.section15_location_card h3 {
     text-align: center;
-    font-size: 2vh;/*for chinese browser*/
+    font-size: 2vh;
+    /*for chinese browser*/
     font-size: calc(0.5vw + 1.5vh);
     margin-top: 1vh;
     margin-bottom: 0.5vh;
 }
-.secrion13_location_card p{
+
+.section15_location_card p {
     text-align: center;
-    font-size: 1vh;/*for chinese browser*/
+    font-size: 1vh;
+    /*for chinese browser*/
     font-size: calc(0.5vw + 0.5vh);
-    margin-top: 1vh;/*for chinese browser*/
+    margin-top: 1vh;
+    /*for chinese browser*/
     margin-top: calc(1vw + 0.5vh);
-    margin-bottom: 2vh;/*for chinese browser*/
+    margin-bottom: 2vh;
+    /*for chinese browser*/
     margin-bottom: calc(1vw + 2vh);
 }
 
-.secrion13_location_card p:hover{
-    transform:  scale(1.5);
+.section15_location_card p:hover {
+    transform: scale(1.5);
     transition: 0.5s;
-    
+
 }
 
-.secrion13_location_card a{
+.section15_location_card a {
     text-decoration: none;
     color: rgba(0, 0, 0, 0.429);
 }
 
-.secrion13_location_card a:hover{
+.section15_location_card a:hover {
     color: rgba(0, 0, 0, 0.904);
 }
 
-.section13_title{
-    margin-top: 2vh;/*for chinese browser*/
+.section15_title {
+    margin-top: 2vh;
+    /*for chinese browser*/
     margin-top: calc(3vw + 1vh);
 }
 
-.section13_title h1{
+.section15_title h1 {
     text-align: center;
-    font-size: 3vh;/*for chinese browser*/
+    font-size: 3vh;
+    /*for chinese browser*/
     font-size: calc(2vw + 2vh);
 }
 
-.section13_title p{
+.section15_title p {
     text-align: center;
-    font-size: 2vh;/*for chinese browser*/
+    font-size: 2vh;
+    /*for chinese browser*/
     font-size: calc(2vw + 1.5vh);
 }
 
-.secrion13_location_container{
+.section15_location_container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -72,7 +83,7 @@
     margin-bottom: 5vh;
 }
 
-.secrion13_location_card{
+.section15_location_card {
     width: 50vh;
     height: max-content;
     border-radius: 1vh;
@@ -89,7 +100,7 @@
 }
 
 
-.secrion13_location_card:hover {
+.section15_location_card:hover {
 
     animation: hoverAnimation 0.8s forwards;
 }
@@ -98,6 +109,7 @@
     0% {
         transform: skew(-5deg) scale(1);
     }
+
     100% {
         transform: scale(1.1);
     }
@@ -105,7 +117,7 @@
 }
 
 
-.secrion13_location_card img{
+.section15_location_card img {
     width: 70vh;
     height: 30vh;
     object-fit: cover;
