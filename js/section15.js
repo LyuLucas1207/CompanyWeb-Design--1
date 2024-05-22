@@ -131,21 +131,32 @@ document.addEventListener('DOMContentLoaded', () => {
         modal.style.display = 'block';
     }
 
-    function updateModalImage(animationClass) {
-        const modalImage = document.getElementById('section15_modal-image');
-        if (animationClass !== 'none') {
-            modalImage.classList.add(animationClass);
-            modalImage.addEventListener('animationend', function() {
-                modalImage.classList.remove(animationClass);
-                modalImage.src = imageDetails[currentImageIndex];
-                modalImage.classList.add(animationClass.includes('left') ? 'section15_slide-in-left' : 'section15_slide-in-right');
-                modalImage.addEventListener('animationend', function() {
-                    modalImage.classList.remove('section15_slide-in-left', 'section15_slide-in-right');
-                }, { once: true });
-            }, { once: true });
-        } else {
-            modalImage.src = imageDetails[currentImageIndex];
-        }
+    function updateModalImage() {
+        const modalImage1 = document.getElementById('section15_modal-image1');
+        const modalImage2 = document.getElementById('section15_modal-image2');
+        modalImage1.src = imageDetails[currentImageIndex];
+        modalImage1.classList.remove('section15_hidden');
+        modalImage2.classList.add('section15_hidden');
+    }
+
+    function switchImages(next) {
+        const modalImage1 = document.getElementById('section15_modal-image1');
+        const modalImage2 = document.getElementById('section15_modal-image2');
+        const outgoingImage = modalImage1.classList.contains('section15_hidden') ? modalImage2 : modalImage1;
+        const incomingImage = modalImage1.classList.contains('section15_hidden') ? modalImage1 : modalImage2;
+        
+        outgoingImage.classList.remove('section15_slide-in-left', 'section15_slide-in-right', 'section15_slide-out-left', 'section15_slide-out-right');
+        incomingImage.classList.remove('section15_slide-in-left', 'section15_slide-in-right', 'section15_slide-out-left', 'section15_slide-out-right');
+        
+        outgoingImage.classList.add(next ? 'section15_slide-out-left' : 'section15_slide-out-right');
+        incomingImage.src = imageDetails[currentImageIndex];
+        incomingImage.classList.remove('section15_hidden');
+        incomingImage.classList.add(next ? 'section15_slide-in-right' : 'section15_slide-in-left');
+        
+        outgoingImage.addEventListener('animationend', function() {
+            outgoingImage.classList.add('section15_hidden');
+            outgoingImage.classList.remove('section15_slide-out-left', 'section15_slide-out-right');
+        }, { once: true });
     }
 
     document.getElementById('section15_prev-image').addEventListener('click', () => {
@@ -154,7 +165,7 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             currentImageIndex = imageDetails.length - 1; // 循环到最后一张图片
         }
-        updateModalImage('section15_slide-out-right');
+        switchImages(false);
     });
 
     document.getElementById('section15_next-image').addEventListener('click', () => {
@@ -163,6 +174,6 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             currentImageIndex = 0; // 循环到第一张图片
         }
-        updateModalImage('section15_slide-out-left');
+        switchImages(true);
     });
 });
