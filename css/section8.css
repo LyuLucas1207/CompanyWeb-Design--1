@@ -19,6 +19,7 @@
     overflow: auto;
     scrollbar-width: none;
     -ms-overflow-style: none;
+    overflow-x: hidden;
 }
 
 .section8::-webkit-scrollbar {

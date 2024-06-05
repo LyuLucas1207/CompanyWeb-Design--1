@@ -8,6 +8,7 @@
     flex-direction: column;
     justify-content: center;
     align-items:center;
+    overflow-x: hidden;
 }
 .section16_title{
     text-align: left;
@@ -34,6 +35,7 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%); */
+    overflow-x: hidden;
     width: 80vw;
     height: 60vh;
     padding: 5vw 5vh 5vw 5vh;
@@ -48,6 +50,7 @@
 }
 
 .section16_slide{
+    overflow-x: hidden;
     width: 100%;
     height: 100%;
     margin-top: 50px;
@@ -55,6 +58,7 @@
 }
 
 .section16_item{
+    overflow-x: hidden;
     width: 15vh;
     height: 20vh;
     background-position: 50% 50%;
