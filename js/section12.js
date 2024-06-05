@@ -143,7 +143,7 @@ function showModal(product) {
     modalContent.innerHTML = `
         <span class="section12_close">&times;</span>
         <h2>${product.name}</h2>
-        <img src="${product.img}" alt="${product.name}">
+        <img loading="eager" src="${product.img}" alt="${product.name}">
         <p>${product.description}</p>
         <p>￥${product.price}</p>
         <p>${product.detailed_info}</p>

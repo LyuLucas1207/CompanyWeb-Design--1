@@ -85,6 +85,7 @@
     background: none;/* remove the background */
     color: rgba(0, 0, 0, 1);
     font-size: 2vh;
+    z-index: 11;
     
 }
 .section5_items :hover {
@@ -169,6 +170,7 @@
     display: block; /* Makes each link take full width of the dropdown */
     /* white-space: nowrap; Prevent text wrapping */
     border-radius: 1vh;
+    z-index: 1111;
 }
 
 .section5_dropdown a:hover {
