@@ -9,6 +9,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 40vw;
     height: 55vh;
     background-color: #ffffff00;
 }
@@ -74,9 +75,8 @@
 /* Media query for mobile devices */
 @media (max-width: 1008px) {
     .section19_shell {
-        width: 90vw; /* 缩小整体宽度 */
-        height: 50vw; /* 缩小整体高度，保持比例 */
-        rotate: 90deg; /* 旋转90度 */
+        width: 40vw; /* 缩小整体宽度 */
+        height: 50vh; /* 缩小整体高度，保持比例 */
     }
     .section19_min {
         width: 5vw; /* 调整小图片宽度 */
