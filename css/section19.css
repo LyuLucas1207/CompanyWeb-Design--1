@@ -78,8 +78,14 @@
         width: 40vw; /* 缩小整体宽度 */
         height: 50vh; /* 缩小整体高度，保持比例 */
     }
+
+    .section19_min-images {
+        width: 80%; /* 调整小图片宽度 */
+        justify-content: space-between;
+        
+    }
     .section19_min {
-        width: 5vw; /* 调整小图片宽度 */
-        height: 5vw; /* 调整小图片高度 */
+        width: 5vh; /* 调整小图片宽度 */
+        height: 5vh; /* 调整小图片高度 */
     }
 }
