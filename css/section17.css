@@ -59,7 +59,7 @@
 
 .section17 p {
     font-family: Arno Pro, serif;
-    font-size: 1.4rem;
+    font-size: 2.5vh;
     line-height: 1.4;
     margin: 0;
 }
@@ -89,7 +89,7 @@
 .section17_multicol {
     column-count: 4;
     column-gap: 2rem;
-}
+}   
 
 .section17_multicol+img {
     margin: 2rem 0;
@@ -101,13 +101,28 @@
 }
 
 .section17 article img {
-    width: 50%;
+    width:30%;
     object-fit: cover;
     display: block; /* 确保图片是块级元素 */
-    margin-left: auto; /* 自动左边距 */
-    margin-right: auto; /* 自动右边距 */
+    margin: 5vh 0vh 5vh 0vh;/* up right down left */
     justify-content: center;
     align-items: center;
+}
+
+.section17 article img:first-child{
+    margin-left: auto;
+}
+
+.section17 article img:last-child{
+    margin-right: auto;
+}
+
+
+.section17_imgs {
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .section17 article header {
@@ -118,17 +133,38 @@
 
 .section17 article h1 {
     margin-top: 0;
-    font-size: 3rem;
+    font-size: 8vh;
 }
 
 .section17 article h2 {
     break-after: column;
-    font-size: 1.5rem;
+    font-size: 4vh;
 }
 
 .section17 h1,
 h2 {
     font-family: Lato, sans-serif;
+}
+
+@media screen and (max-width: 1000px){
+    .section17 article h1 {
+        margin-top: 0;
+        font-size: 3vh;
+    }
+    
+    .section17 article h2 {
+        break-after: column;
+        font-size: 2vh;
+    }
+
+    .section17 article p{
+        font-size: 1.5vh;
+    }
+
+    .section17 article img {
+        width: 35%;
+    }
+    
 }
 
 @media all and (max-width: 1600px) {
