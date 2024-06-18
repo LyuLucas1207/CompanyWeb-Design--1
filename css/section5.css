@@ -191,8 +191,15 @@
         writing-mode: vertical-rl;
 
     }
+    .section5_nav .section5_items:hover .section5_dropdown{
+        display: block;
+        width: max-content;
+        /*transform move to left*/
+        transform: translateX(-30%);
+    }
+
     .section5_nav .section5_items:hover .section5_dropdown > a{
         font-size: 2vh;
-        width: 70%;
+        width: 30vw;
     }
 }
