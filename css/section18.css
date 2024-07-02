@@ -3,8 +3,15 @@
     justify-content: center;
     align-items: center;
     background-color: rgba(255, 255, 255, 0);
-    height: 50vh;
+    height: 70vh;
     width : 100%;
+    /*style="background-image: url('./pic/pic32.jpeg'); margin: 1vh; "*/
+    background-image: url("../pic/pic18.jpeg");
+    background-size: cover;
+    background-position: center;
+    margin: 1vh;
+    /* set no repeat */
+    background-repeat: no-repeat;
 }
 
 .section18_outer {
@@ -12,7 +19,7 @@
     width: 100vh;
     height: 30vh;
     border: 1vh solid white;
-    background-image: url("../pic/pic37.jpg");
+    background-image: url("../pic/pic18.jpeg");
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -27,7 +34,7 @@
     position: absolute;
     width: 50vh;
     height: 60vh;
-    background-image: url("../pic/pic34.jpg");
+    background-image: url("../pic/pic34.jpeg");
     background-color: rgb(15, 15, 13);
     filter: drop-shadow(4px 4px 12px rgb(0, 0, 0));
     background-size: cover;
