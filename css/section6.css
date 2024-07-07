@@ -40,7 +40,6 @@
     font-size: 1.6vh;
     /*for chinese browser*/
     font-size: calc(0.3vw + 1.3vh);
-    font-family: 'YouSheYuFeiTeJianKangTi';
     text-align: center;
     line-height: 4vh;
     border: 1px solid black;
