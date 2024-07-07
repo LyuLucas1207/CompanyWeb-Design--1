@@ -376,25 +376,21 @@ async function loadDataAndCreateElements_section12(url) {
         .then(data => {
             const categories = Object.keys(data);
             categories.forEach(category => {
-                if (document.getElementById(`section12_cards_${category}`)) {
+                const id = `section12_cards_${category}`;
+                const cardsID = document.getElementById(id);
+                if (cardsID) {
                     data[category].forEach(product => {
-                        const id = `section12_cards_${category}`;
-                        const cardsID = document.getElementById(id);
                         const card = createCard_section12(product);
-                        if (cardsID) {
-                            cardsID.appendChild(card);
-                        } else {
-                            console.error(`No element with id ${id} found.`);
-                        }
+                        cardsID.appendChild(card);
                     });
-                    cards.appendChild(cardsID);
                 } else {
-                    console.error(`No element with id section12_cards_${category} found.`);
+                    console.error(`No element with id ${id} found.`);
                 }
             });
         })
         .catch(error => console.error('Error loading the products data:', error));
 }
+
 function createCard_section12(product) {
     const card = document.createElement('div');
     card.className = 'section12_card';
