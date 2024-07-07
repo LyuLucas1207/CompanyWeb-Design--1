@@ -4,55 +4,63 @@
         "title": "How to Use Facial Expressions in Public Speaking",
         "date": "11 Dec 2030",
         "views": 383,
-        "image": "./pic/pic1.jpeg"
+        "image": "./pic/pic1.jpeg",
+        "link": "https://www.baidu.com"
     },
     {
         "category": "Relationships",
         "title": "Easy Ways to Provide Emotional Support for Your Partner",
         "date": "11 Aug 2030",
         "views": 59,
-        "image": "./pic/pic2.jpeg"
+        "image": "./pic/pic2.jpeg",
+        "link": "https://www.360.com"
     },
     {
         "category": "Career",
         "title": "The State of Remote Work: Statistics, Benefits, and Trends",
         "date": "2 Apr 2030",
         "views": 236,
-        "image": "./pic/pic3.jpeg"
+        "image": "./pic/pic3.jpeg",
+        "link": "https://www.qq.com"
     },
     {
         "category": "Living",
         "title": "How to Use Facial Expressions in Public Speaking",
         "date": "11 Dec 2030",
         "views": 383,
-        "image": "./pic/pic4.jpeg"
+        "image": "./pic/pic4.jpeg",
+        "link": "https://www.sina.com"
     },
     {
         "category": "Relationships",
         "title": "Easy Ways to Provide Emotional Support for Your Partner",
         "date": "11 Aug 2030",
         "views": 59,
-        "image": "./pic/pic5.jpeg"
+        "image": "./pic/pic5.jpeg",
+        "link": "https://www.taobao.com"
     },
     {
         "category": "Career",
         "title": "The State of Remote Work: Statistics, Benefits, and Trends",
         "date": "2 Apr 2030",
         "views": 236,
-        "image": "./pic/pic6.jpeg"
+        "image": "./pic/pic6.jpeg",
+        "link": "https://www.jd.com"
     },
     {
         "category": "Living",
         "title": "How to Use Facial Expressions in Public Speaking",
         "date": "11 Dec 2030",
         "views": 383,
-        "image": "./pic/pic7.jpeg"
+        "image": "./pic/pic7.jpeg",
+        "link": "https://www.tmall.com"
     },
     {
         "category": "Relationships",
         "title": "Easy Ways to Provide Emotional Support for Your Partner",
         "date": "11 Aug 2030",
         "views": 59,
-        "image": "./pic/pic8.jpeg"
+        "image": "./pic/pic8.jpeg",
+        "link": "https://www.weibo.com"
     }
 ]

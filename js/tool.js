@@ -717,7 +717,7 @@ function imageHorizontalSlider_section19(){
     });
 }
 
-function newsCard_section26(){
+function newsCard_section26() {
     if (!document.querySelector('.section26')) {
         return;
     }
@@ -727,8 +727,9 @@ function newsCard_section26(){
         .then(response => response.json())
         .then(newsData => {
             newsData.forEach(news => {
-                const newsItem = document.createElement('div');
+                const newsItem = document.createElement('a'); // Wrap the whole item with a link
                 newsItem.classList.add('section26_news-item');
+                newsItem.href = news.link; // Set the link URL
 
                 const newsItemImage = document.createElement('div');
                 newsItemImage.classList.add('section26_news-item-img');
@@ -763,8 +764,6 @@ function newsCard_section26(){
 
                 const newsMeta = document.createElement('div');
                 newsMeta.classList.add('section26_news-meta');
-                // newsMeta.innerHTML = `<span>${news.date}</span> • <span>${news.views} views</span>`;
-                //DO NOT USE innerHTML here, use textContent instead
                 const newsDate = document.createElement('span');
                 newsDate.textContent = news.date;
                 const newsViews = document.createElement('span');
@@ -772,7 +771,6 @@ function newsCard_section26(){
                 newsMeta.appendChild(newsDate);
                 newsMeta.appendChild(document.createTextNode(' • '));
                 newsMeta.appendChild(newsViews);
-
 
                 newsItemContent.appendChild(newsCategory);
                 newsItemContent.appendChild(newsTitle);
@@ -789,6 +787,7 @@ function newsCard_section26(){
             });
         });
 }
+
 
 
 export { createDropdown_section5, sliderHorizon_section8, 
