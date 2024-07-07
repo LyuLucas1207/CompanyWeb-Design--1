@@ -727,9 +727,8 @@ function newsCard_section26() {
         .then(response => response.json())
         .then(newsData => {
             newsData.forEach(news => {
-                const newsItem = document.createElement('a'); // Wrap the whole item with a link
+                const newsItem = document.createElement('div'); // Wrap the whole item with a link
                 newsItem.classList.add('section26_news-item');
-                newsItem.href = news.link; // Set the link URL
 
                 const newsItemImage = document.createElement('div');
                 newsItemImage.classList.add('section26_news-item-img');
@@ -759,8 +758,11 @@ function newsCard_section26() {
                 newsCategory.textContent = news.category;
 
                 const newsTitle = document.createElement('div');
-                newsTitle.classList.add('section26_news-title');
-                newsTitle.textContent = news.title;
+                const newsTitlelink = document.createElement('a');
+                newsTitlelink.href = news.link;
+                newsTitlelink.textContent = news.title;
+                newsTitlelink.classList.add('section26_news-title');
+                newsTitle.appendChild(newsTitlelink);
 
                 const newsMeta = document.createElement('div');
                 newsMeta.classList.add('section26_news-meta');
@@ -787,6 +789,8 @@ function newsCard_section26() {
             });
         });
 }
+
+
 
 
 

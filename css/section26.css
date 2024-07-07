@@ -58,7 +58,6 @@
 .section26_news-item:hover img {
     transform: scale(1.1);
 }
-
 .section26_overlay {
     position: absolute;
     top: 0;
@@ -136,15 +135,22 @@
 
 }
 
-.section26_news-title {
-    font-size: 1.5vh;
-    margin: 1vw 0;
+.section26_news-title{
+    font-size: 1.8vh;
+    margin: 2vh 0vh 0vh 0;
+}
+
+.section26_news-title:hover {
+    color: #00695c;
+    font-size: 2vh;
+    transition: 0.5s ease-in-out;
 }
 
 
 
 .section26_news-meta {
-    font-size: 1.8vh;
+    font-size: 1.6vh;
+    margin: 2vh 0vh 0vh 0;
     color: #999;
 }
 
@@ -154,16 +160,16 @@
 
 @media screen and (max-width: 1028px) {
     .section26_news-title {
-        font-size: 1.6vh;
+        font-size: 1.2vh;
     }
 
     .section26_news-meta {
-        font-size: 1.4vh;
+        font-size: 1vh;
     }
 
     .section26_news-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
         gap: 20px;
         margin-top: 20px;
     }
