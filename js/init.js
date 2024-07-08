@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
     tool.blogHeader_section17();
     tool.imageHorizontalSlider_section19();
     tool.newsCard_section26();
+    tool.profileCard_section31();
 
     const scrollButton = document.querySelector('.section10_scroll-to-top');
     if (scrollButton) {

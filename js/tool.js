@@ -154,22 +154,71 @@ function profileCard_section9(){
                 profileDiv.appendChild(avatarDiv);
                 profileDiv.appendChild(infoContainerDiv);
 
-                profileDiv.addEventListener('click', () => openModal_section9(profile));
+                profileDiv.addEventListener('click', () => openModal(profile, 'section9'));
+                profilesContainer.appendChild(profileDiv);
+            });
+        })
+        .catch(error => console.error('Error loading the profiles:', error));
+}
+
+function profileCard_section31(){
+    if (!document.querySelector('.section31')) {
+        return;
+    }
+    fetch('./data/section9/section9.json')
+        .then(response => response.json())
+        .then(data => {
+            const profilesContainer = document.querySelector('.section31_profiles');
+            data.Profiles.forEach(profile => {
+                const profileDiv = document.createElement('div');
+                profileDiv.className = 'section31_profile';
+
+                const avatarDiv = document.createElement('div');
+                avatarDiv.className = 'section31_avatar';
+                const img = document.createElement('img');
+                img.src = profile.image;
+                img.alt = profile.name;
+                img.className = 'profile_img';
+                avatarDiv.appendChild(img);
+
+                const infoContainerDiv = document.createElement('div');
+                infoContainerDiv.className = 'section31_info_container';
+                const infoDiv = document.createElement('div');
+                infoDiv.className = 'section31_info';
+
+                const h1 = document.createElement('h1');
+                h1.textContent = profile.name;
+                const h2 = document.createElement('h2');
+                h2.textContent = profile.position;
+                const p = document.createElement('p');
+                p.textContent = profile.description;
+
+                infoDiv.appendChild(h1);
+                infoDiv.appendChild(h2);
+                infoDiv.appendChild(p);
+                infoContainerDiv.appendChild(infoDiv);
+
+                profileDiv.appendChild(avatarDiv);
+                profileDiv.appendChild(infoContainerDiv);
+
+                const sectionClassName = 'section31';
+
+                profileDiv.addEventListener('click', () => openModal(profile, sectionClassName));
                 profilesContainer.appendChild(profileDiv);
             });
         })
         .catch(error => console.error('Error loading the profiles:', error));
 }
 //Not exported
-function openModal_section9(profile) {
-    const modal = document.querySelector('.section9_modal');
-    const modalContent = modal.querySelector('.section9_modal-content');
+function openModal(profile, sectionClassName) {
+    const modal = document.querySelector(`.${sectionClassName}_modal`);
+    const modalContent = modal.querySelector(`.${sectionClassName}_modal-content`);
 
     // Clear previous modal content
     modalContent.innerHTML = '';
 
     const closeBtn = document.createElement('span');
-    closeBtn.className = 'section9_close';
+    closeBtn.className = `${sectionClassName}_close`;
     closeBtn.textContent = '×';
     closeBtn.addEventListener('click', () => {
         modal.style.display = 'none';
@@ -798,5 +847,6 @@ export { createDropdown_section5, sliderHorizon_section8,
     profileCard_section9, smoothScrollToTop_section10,
     questionAsking_section11, productCard_section12,
     locationCard_section15, blogHeader_section17,
-    imageHorizontalSlider_section19, newsCard_section26
+    imageHorizontalSlider_section19, newsCard_section26,
+    profileCard_section31
 };
