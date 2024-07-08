@@ -23,6 +23,13 @@
     grid-template-columns: repeat(auto-fill, minmax(40vw, 1fr));
 }
 
+@media screen and (max-width: 1008px) {
+    .section31_profiles {
+        grid-template-columns: repeat(auto-fill, minmax(80vw, 1fr));
+    }
+    
+}
+
 .section31_profile {
     width: 100%;
     display: flex;
