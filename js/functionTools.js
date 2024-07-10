@@ -839,7 +839,7 @@ function newsCard_section26() {
         });
 }
 
-function clockHistory_section32() {
+function clockHistory_section32(phoneTime = 5) {
     if(!document.querySelector('.section32')) {
         return;
     }
@@ -914,22 +914,38 @@ function clockHistory_section32() {
     const section32 = document.querySelector('.section32');
     const section32Main = document.querySelector('.section32_main');
 
-    section32.addEventListener('wheel', function (e) {
-        e.preventDefault(); // Prevent default scroll behavior
-        e.stopPropagation(); // Stop event propagation
+    
 
-        const section32Rect = section32.getBoundingClientRect();
-        const section32MainRect = section32Main.getBoundingClientRect();
+    //使用手机设备时禁用滚轮监听器
+    const screenWidth = window.screen.width;
+    if (!(screenWidth < 800 /* 768px */)) {
+        section32.addEventListener('wheel', function (e) {
+            e.preventDefault(); // Prevent default scroll behavior
+            e.stopPropagation(); // Stop event propagation
 
-        if (e.deltaY < 0 && section32MainRect.top >= section32Rect.top) {
-            slideToPrev();
-        } else if (e.deltaY > 0 && section32MainRect.bottom <= section32Rect.bottom) {
-            slideToNext();
-        } else {
-            // Enable default scrolling
-            section32.style.overflowY = 'auto';
-        }
-    });
+            const section32Rect = section32.getBoundingClientRect();
+            const section32MainRect = section32Main.getBoundingClientRect();
+
+            if (e.deltaY < 0 && section32MainRect.top >= section32Rect.top) {
+                slideToPrev();
+            } else if (e.deltaY > 0 && section32MainRect.bottom <= section32Rect.bottom) {
+                slideToNext();
+            } else {
+                // Enable default scrolling
+                section32.style.overflowY = 'auto';
+            }
+        });
+    }
+
+    //设置自动滚动效果 每隔phoneTime秒自动切换到下一张卡片,如果滑到最后一张卡片，下一张切换到第一张卡片
+
+    setInterval(() => {
+        if (offset === -4 ){
+            offset = 0;
+        } 
+        slideToNext();
+    }, phoneTime * 1000);
+
 
     // 添加触摸事件监听器
     let touchStartX = 0;
