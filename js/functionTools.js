@@ -840,6 +840,9 @@ function newsCard_section26() {
 }
 
 function clockHistory_section32() {
+    if(!document.querySelector('.section32')) {
+        return;
+    }
     // 定义变量
     let offset = 0;
     const maxOffset = 0;
@@ -957,6 +960,7 @@ function clockHistory_section32() {
         // Check if swiping right and at the edge of section32 to allow default page back behavior
         if (touchDiff < -50 && section32MainRect.left <= section32Rect.left) {
             section32.style.overflowY = 'auto'; // Enable default scrolling
+
         }
 
         //如果滑到最后一张卡片，继续左滑切换到第一个卡片
@@ -965,9 +969,6 @@ function clockHistory_section32() {
             updateSlidesAndClock();
         }
     });
-
-
-
 }
 
 

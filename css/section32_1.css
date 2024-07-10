@@ -8,7 +8,18 @@
     overflow: hidden;
     /* 隐藏溢出内容的滚动条 */
     /* 其他样式 */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
 }
+
+.section32::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari and Opera */
+}
+
+
 .section32_main {
     position: static;
     left: -1%;
