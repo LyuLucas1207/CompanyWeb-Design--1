@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', async function () {
     tool.imageHorizontalSlider_section19(),
     tool.newsCard_section26(),
     tool.profileCard_section31(),
-    tool.clockHistory_section32(2)
+    tool.clockHistory_section32(5)
 
     const scrollButton = document.querySelector('.section10_scroll-to-top');
     if (scrollButton) {

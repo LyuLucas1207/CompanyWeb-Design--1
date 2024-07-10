@@ -942,49 +942,51 @@ function clockHistory_section32(phoneTime = 5) {
     setInterval(() => {
         if (offset === -4 ){
             offset = 0;
-        } 
-        slideToNext();
+            slideToPrev();
+        } else {
+            slideToNext();
+        }
     }, phoneTime * 1000);
 
 
-    // 添加触摸事件监听器
-    let touchStartX = 0;
+    // // 添加触摸事件监听器
+    // let touchStartX = 0;
 
-    window.addEventListener("touchstart", function (event) {
-        touchStartX = event.touches[0].clientX;
-    });
+    // window.addEventListener("touchstart", function (event) {
+    //     touchStartX = event.touches[0].clientX;
+    // });
 
-    window.addEventListener("touchmove", function (event) {
-        event.preventDefault(); // Prevent default scroll behavior
+    // window.addEventListener("touchmove", function (event) {
+    //     event.preventDefault(); // Prevent default scroll behavior
 
-        const section32Rect = section32.getBoundingClientRect();
-        const section32MainRect = section32Main.getBoundingClientRect();
-        let touchEndX = event.touches[0].clientX;
-        let touchDiff = touchStartX - touchEndX;
+    //     const section32Rect = section32.getBoundingClientRect();
+    //     const section32MainRect = section32Main.getBoundingClientRect();
+    //     let touchEndX = event.touches[0].clientX;
+    //     let touchDiff = touchStartX - touchEndX;
 
-        if (touchDiff > 50 && section32MainRect.top >= section32Rect.top) {
-            slideToNext();
-            touchStartX = touchEndX;
-        } else if (touchDiff < -50 && section32MainRect.bottom <= section32Rect.bottom) {
-            slideToPrev();
-            touchStartX = touchEndX;
-        } else {
-            // Enable default scrolling
-            section32.style.overflowY = 'auto';
-        }
+    //     if (touchDiff > 50 && section32MainRect.top >= section32Rect.top) {
+    //         slideToNext();
+    //         touchStartX = touchEndX;
+    //     } else if (touchDiff < -50 && section32MainRect.bottom <= section32Rect.bottom) {
+    //         slideToPrev();
+    //         touchStartX = touchEndX;
+    //     } else {
+    //         // Enable default scrolling
+    //         section32.style.overflowY = 'auto';
+    //     }
 
-        // Check if swiping right and at the edge of section32 to allow default page back behavior
-        if (touchDiff < -50 && section32MainRect.left <= section32Rect.left) {
-            section32.style.overflowY = 'auto'; // Enable default scrolling
+    //     // Check if swiping right and at the edge of section32 to allow default page back behavior
+    //     if (touchDiff < -50 && section32MainRect.left <= section32Rect.left) {
+    //         section32.style.overflowY = 'auto'; // Enable default scrolling
 
-        }
+    //     }
 
-        //如果滑到最后一张卡片，继续左滑切换到第一个卡片
-        if (offset === -5 ){
-            offset = 0;
-            updateSlidesAndClock();
-        }
-    });
+    //     //如果滑到最后一张卡片，继续左滑切换到第一个卡片
+    //     if (offset === -5 ){
+    //         offset = 0;
+    //         updateSlidesAndClock();
+    //     }
+    // });
 }
 
 
