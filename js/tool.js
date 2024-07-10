@@ -114,7 +114,7 @@ function sliderHorizon_section8() {
     }
 }
 
-function profileCard_section9(){
+function profileCard_section9() {
     if (!document.querySelector('.section9')) {
         return;
     }
@@ -161,7 +161,7 @@ function profileCard_section9(){
         .catch(error => console.error('Error loading the profiles:', error));
 }
 
-function profileCard_section31(){
+function profileCard_section31() {
     if (!document.querySelector('.section31')) {
         return;
     }
@@ -280,7 +280,7 @@ function openModal(profile, sectionClassName) {
     };
 }
 
-function smoothScrollToTop_section10(duration){
+function smoothScrollToTop_section10(duration) {
     if (!document.querySelector('.section10')) {
         return;
     }
@@ -306,7 +306,7 @@ function easeInOutCubic_section10(t) {
     return t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1;
 }
 
-function questionAsking_section11(){
+function questionAsking_section11() {
     if (!document.querySelector('.section11')) {
         return;
     }
@@ -365,7 +365,7 @@ function questionAsking_section11(){
         });
 }
 
-async function productCard_section12(){
+async function productCard_section12() {
     if (!document.querySelector('.section12')) {
         return;
     }
@@ -390,7 +390,7 @@ function setupLazyLoading_section12() {
     }, {
         root: null,
         rootMargin: '0px',
-        threshold: 0.1 
+        threshold: 0.1
     });
     const images = document.querySelectorAll('img[data-src]');
     images.forEach(img => {
@@ -533,7 +533,7 @@ function showModal_section12(product) {
     };
 }
 
-function locationCard_section15(){
+function locationCard_section15() {
     if (!document.querySelector('.section15')) {
         return;
     }
@@ -668,7 +668,7 @@ function locationCard_section15(){
     });
 }
 
-function blogHeader_section17(){
+function blogHeader_section17() {
     if (!document.querySelector('.section17')) {
         return;
     }
@@ -730,7 +730,7 @@ function blogHeader_section17(){
     window.addEventListener('touchend', touchEndHandler_section17);
 }
 
-function imageHorizontalSlider_section19(){
+function imageHorizontalSlider_section19() {
     if (!document.querySelector('.section19')) {
         return;
     }
@@ -843,17 +843,17 @@ function clockHistory_section32() {
     // 定义变量
     let offset = 0;
     const maxOffset = 0;
-    const minOffset = -3;
+    const minOffset = -4;
     const slides = Array.from(document.querySelectorAll(".section32_card"));
     const clock = document.querySelector(".section32_clock-table");
-    const startYear = 2024; // 起始年份
+    const startYear = 2020; // 起始年份
 
     // 初始化时钟表盘
-    for (let i = 0, year = startYear; i < 360; i += 6) {
+    for (let i = 180, year = startYear; i < 540; i += 6) {
         addClockScale(i);
         if (i % 60 === 0) {
             addThickClockScale(i, year);
-            year--;
+            year++;
         }
     }
 
@@ -929,10 +929,10 @@ function clockHistory_section32() {
     });
 
     // 添加触摸事件监听器
-    let touchStartY = 0;
+    let touchStartX = 0;
 
     window.addEventListener("touchstart", function (event) {
-        touchStartY = event.touches[0].clientY;
+        touchStartX = event.touches[0].clientX;
     });
 
     window.addEventListener("touchmove", function (event) {
@@ -940,27 +940,42 @@ function clockHistory_section32() {
 
         const section32Rect = section32.getBoundingClientRect();
         const section32MainRect = section32Main.getBoundingClientRect();
-        let touchEndY = event.touches[0].clientY;
-        let touchDiff = touchStartY - touchEndY;
+        let touchEndX = event.touches[0].clientX;
+        let touchDiff = touchStartX - touchEndX;
 
         if (touchDiff > 50 && section32MainRect.top >= section32Rect.top) {
             slideToNext();
-            touchStartY = touchEndY;
+            touchStartX = touchEndX;
         } else if (touchDiff < -50 && section32MainRect.bottom <= section32Rect.bottom) {
             slideToPrev();
-            touchStartY = touchEndY;
+            touchStartX = touchEndX;
         } else {
             // Enable default scrolling
             section32.style.overflowY = 'auto';
         }
+
+        // Check if swiping right and at the edge of section32 to allow default page back behavior
+        if (touchDiff < -50 && section32MainRect.left <= section32Rect.left) {
+            section32.style.overflowY = 'auto'; // Enable default scrolling
+        }
+
+        //如果滑到最后一张卡片，继续左滑切换到第一个卡片
+        if (offset === -5 ){
+            offset = 0;
+            updateSlidesAndClock();
+        }
     });
+
+
+
 }
 
 
 
 
 
-export { createDropdown_section5, sliderHorizon_section8, 
+export {
+    createDropdown_section5, sliderHorizon_section8,
     profileCard_section9, smoothScrollToTop_section10,
     questionAsking_section11, productCard_section12,
     locationCard_section15, blogHeader_section17,
